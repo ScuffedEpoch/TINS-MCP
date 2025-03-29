@@ -1,0 +1,36 @@
+{
+  "name": "tins-mcp",
+  "version": "1.0.0",
+  "description": "There Is No Software - MCP server for generating applications from README files",
+  "main": "build/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mcp",
+    "zerosource",
+    "tins",
+    "thereisnosoftware",
+    "code-generation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.1.0",
+    "axios": "^1.6.2",
+    "fs-extra": "^11.1.1",
+    "markdown-it": "^13.0.1",
+    "archiver": "^5.3.1"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/markdown-it": "^13.0.1",
+    "@types/archiver": "^5.3.2",
+    "@types/node": "^20.10.0",
+    "typescript": "^5.1.6"
+  }
+}
