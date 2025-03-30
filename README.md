@@ -65,6 +65,32 @@ Validates a README.md file against the Zero Source specification.
 Parameters:
 - `readme_path`: Path to the README.md file (required)
 
+## Best Practices
+
+### Path Handling
+
+- **Always use absolute paths** when providing parameters to TINS-MCP server tools:
+  ```
+  ✅ CORRECT: "c:/path/to/project/README.md"
+  ❌ INCORRECT: "./README.md" or "README.md"
+  ```
+  The TINS-MCP server may not correctly resolve relative paths based on your current working directory.
+
+- **Use forward slashes** (`/`) in paths, even on Windows systems, for better cross-platform compatibility.
+
+- **For output directories**, ensure they exist before running the generator or use absolute paths where TINS can create the directory automatically.
+
+### General Usage Tips
+
+- **Start with validation**: Always use the `validate_readme` tool first to check if your README follows Zero Source specifications before attempting generation.
+
+- **Check the output location**: Be aware that the actual output location might differ from what was specified in the `output_dir` parameter. You may need to copy files to your desired location after generation.
+
+- **Specify output parameters clearly**:
+  - `output_dir`: Use absolute paths for reliable file placement
+  - `output_type`: Choose "files" for individual files or "zip" for a compressed package
+  - `preferred_language`: Only specify if the README doesn't already contain a language directive
+
 ## Configuration
 
 To use this MCP server with Claude, you need to add it to your MCP settings configuration file:
