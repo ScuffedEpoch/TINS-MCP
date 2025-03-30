@@ -1,10 +1,9 @@
 # TINS-MCP Server
 
-**https://thereisnosource.com/**
-
-[TINS main Repo](https://github.com/ScuffedEpoch/TINS)
+[TINS Official Repository](https://github.com/ScuffedEpoch/TINS)
 
 ## There Is No Software - MCP Server
+**https://thereisnosource.com/**
 
 A Model Context Protocol (MCP) server that generates software applications from README.md files following the Zero Source specification.
 
