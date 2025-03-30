@@ -1,7 +1,8 @@
 # TINS-MCP Server
 
-More Information: https://github.com/ScuffedEpoch/TINS
 **https://thereisnosource.com/**
+
+[TINS main Repo](https://github.com/ScuffedEpoch/TINS)
 
 ## There Is No Software - MCP Server
 
