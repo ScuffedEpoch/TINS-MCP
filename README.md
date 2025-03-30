@@ -34,7 +34,15 @@ npm install
 npm run build
 ```
 
-4. Configure the MCP server in your Claude desktop or VS Code extension settings
+4. Configure the MCP server in your Claude desktop or VS Code extension settings using the provided setup script:
+
+```bash
+node setup-mcp.cjs
+```
+
+This script will automatically add the TINS-MCP server to your Claude VS Code extension or desktop app configuration.
+
+> **Note**: The setup script uses CommonJS syntax, so it must be run with the `.cjs` extension.
 
 ## Usage
 
@@ -98,3 +106,18 @@ npm run dev
 ## License
 
 MIT
+
+## Testing Your Installation
+
+To verify that your TINS-MCP server is correctly installed and working with Claude:
+
+1. Make sure the MCP server is configured using the setup script
+2. Ask Claude to generate an application from a Zero Source README
+
+For example, you can try generating the todo app example:
+
+```
+Please use the TINS-MCP server to generate an application from the examples/todo-app-example.md file.
+```
+
+Claude should use the TINS-MCP server to parse the README and generate a complete todo application based on the specifications.
