@@ -1,36 +1,32 @@
 {
-  "name": "tins-mcp",
+  "name": "ltm-cline",
   "version": "1.0.0",
-  "description": "There Is No Software - MCP server for generating applications from README files",
-  "main": "build/index.js",
-  "type": "module",
+  "description": "Long-term memory for Claude 3.7 using MCP and SQLite",
+  "main": "src/index.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node build/index.js",
-    "dev": "tsc -w",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "keywords": [
+    "ltm",
+    "claude",
+    "memory",
     "mcp",
-    "zerosource",
-    "tins",
-    "thereisnosoftware",
-    "code-generation"
+    "sqlite",
+    "ai"
   ],
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.8.0",
-    "axios": "^1.6.2",
-    "fs-extra": "^11.1.1",
-    "markdown-it": "^13.0.1",
-    "archiver": "^5.3.1"
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "sqlite3": "^5.1.7",
+    "dotenv": "^16.4.1",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
-    "@types/fs-extra": "^11.0.4",
-    "@types/markdown-it": "^13.0.1",
-    "@types/archiver": "^5.3.2",
-    "@types/node": "^20.10.0",
-    "typescript": "^5.1.6"
+    "@types/sqlite3": "^3.1.11",
+    "@types/node": "^20.11.5",
+    "typescript": "^5.3.3"
   }
 }
